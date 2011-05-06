@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		EFB13B0F1374B54E00EB8CB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB13B0E1374B54E00EB8CB3 /* Foundation.framework */; };
 		EFB13B121374B54E00EB8CB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB13B111374B54E00EB8CB3 /* main.m */; };
+		EFB13B211374B5A300EB8CB3 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB13B1C1374B5A300EB8CB3 /* Card.m */; };
+		EFB13B221374B5A300EB8CB3 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB13B1E1374B5A300EB8CB3 /* Game.m */; };
+		EFB13B231374B5A300EB8CB3 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB13B201374B5A300EB8CB3 /* Player.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,8 +30,14 @@
 		EFB13B0A1374B54E00EB8CB3 /* whist_cli */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = whist_cli; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFB13B0E1374B54E00EB8CB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EFB13B111374B54E00EB8CB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EFB13B141374B54E00EB8CB3 /* whist_cli-Prefix.pch */ = {isa = PBXFileReference; path = "whist_cli-Prefix.pch"; sourceTree = "<group>"; };
+		EFB13B141374B54E00EB8CB3 /* whist_cli-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "whist_cli-Prefix.pch"; sourceTree = "<group>"; };
 		EFB13B151374B54E00EB8CB3 /* whist_cli.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = whist_cli.1; sourceTree = "<group>"; };
+		EFB13B1B1374B5A300EB8CB3 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		EFB13B1C1374B5A300EB8CB3 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		EFB13B1D1374B5A300EB8CB3 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		EFB13B1E1374B5A300EB8CB3 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
+		EFB13B1F1374B5A300EB8CB3 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		EFB13B201374B5A300EB8CB3 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +81,12 @@
 			isa = PBXGroup;
 			children = (
 				EFB13B111374B54E00EB8CB3 /* main.m */,
+				EFB13B1B1374B5A300EB8CB3 /* Card.h */,
+				EFB13B1C1374B5A300EB8CB3 /* Card.m */,
+				EFB13B1D1374B5A300EB8CB3 /* Game.h */,
+				EFB13B1E1374B5A300EB8CB3 /* Game.m */,
+				EFB13B1F1374B5A300EB8CB3 /* Player.h */,
+				EFB13B201374B5A300EB8CB3 /* Player.m */,
 				EFB13B151374B54E00EB8CB3 /* whist_cli.1 */,
 				EFB13B131374B54E00EB8CB3 /* Supporting Files */,
 			);
@@ -134,6 +149,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFB13B121374B54E00EB8CB3 /* main.m in Sources */,
+				EFB13B211374B5A300EB8CB3 /* Card.m in Sources */,
+				EFB13B221374B5A300EB8CB3 /* Game.m in Sources */,
+				EFB13B231374B5A300EB8CB3 /* Player.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
