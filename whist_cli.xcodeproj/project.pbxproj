@@ -1,0 +1,224 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EFB13B0F1374B54E00EB8CB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB13B0E1374B54E00EB8CB3 /* Foundation.framework */; };
+		EFB13B121374B54E00EB8CB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB13B111374B54E00EB8CB3 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EFB13B081374B54E00EB8CB3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EFB13B0A1374B54E00EB8CB3 /* whist_cli */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = whist_cli; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFB13B0E1374B54E00EB8CB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EFB13B111374B54E00EB8CB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EFB13B141374B54E00EB8CB3 /* whist_cli-Prefix.pch */ = {isa = PBXFileReference; path = "whist_cli-Prefix.pch"; sourceTree = "<group>"; };
+		EFB13B151374B54E00EB8CB3 /* whist_cli.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = whist_cli.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFB13B071374B54E00EB8CB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB13B0F1374B54E00EB8CB3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EFB13AFF1374B54D00EB8CB3 = {
+			isa = PBXGroup;
+			children = (
+				EFB13B101374B54E00EB8CB3 /* whist_cli */,
+				EFB13B0D1374B54E00EB8CB3 /* Frameworks */,
+				EFB13B0B1374B54E00EB8CB3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EFB13B0B1374B54E00EB8CB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFB13B0A1374B54E00EB8CB3 /* whist_cli */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFB13B0D1374B54E00EB8CB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFB13B0E1374B54E00EB8CB3 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFB13B101374B54E00EB8CB3 /* whist_cli */ = {
+			isa = PBXGroup;
+			children = (
+				EFB13B111374B54E00EB8CB3 /* main.m */,
+				EFB13B151374B54E00EB8CB3 /* whist_cli.1 */,
+				EFB13B131374B54E00EB8CB3 /* Supporting Files */,
+			);
+			path = whist_cli;
+			sourceTree = "<group>";
+		};
+		EFB13B131374B54E00EB8CB3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EFB13B141374B54E00EB8CB3 /* whist_cli-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFB13B091374B54E00EB8CB3 /* whist_cli */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFB13B181374B54E00EB8CB3 /* Build configuration list for PBXNativeTarget "whist_cli" */;
+			buildPhases = (
+				EFB13B061374B54E00EB8CB3 /* Sources */,
+				EFB13B071374B54E00EB8CB3 /* Frameworks */,
+				EFB13B081374B54E00EB8CB3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = whist_cli;
+			productName = whist_cli;
+			productReference = EFB13B0A1374B54E00EB8CB3 /* whist_cli */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFB13B011374B54D00EB8CB3 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = EFB13B041374B54D00EB8CB3 /* Build configuration list for PBXProject "whist_cli" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EFB13AFF1374B54D00EB8CB3;
+			productRefGroup = EFB13B0B1374B54E00EB8CB3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFB13B091374B54E00EB8CB3 /* whist_cli */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFB13B061374B54E00EB8CB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB13B121374B54E00EB8CB3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EFB13B161374B54E00EB8CB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		EFB13B171374B54E00EB8CB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		EFB13B191374B54E00EB8CB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "whist_cli/whist_cli-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EFB13B1A1374B54E00EB8CB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "whist_cli/whist_cli-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFB13B041374B54D00EB8CB3 /* Build configuration list for PBXProject "whist_cli" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFB13B161374B54E00EB8CB3 /* Debug */,
+				EFB13B171374B54E00EB8CB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFB13B181374B54E00EB8CB3 /* Build configuration list for PBXNativeTarget "whist_cli" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFB13B191374B54E00EB8CB3 /* Debug */,
+				EFB13B1A1374B54E00EB8CB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EFB13B011374B54D00EB8CB3 /* Project object */;
+}
