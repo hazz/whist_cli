@@ -25,13 +25,12 @@
 }
 
 - (void)lead {
-	Card * card = [hand objectAtIndex:0];
+	Card * card = [delegate cardMustBePlayedByPlayer:self fromCards:hand];
 	[hand removeObject:card];
 	[delegate cardPlayed:card byPlayer:self];
 }
 - (void)playCard {
-	[delegate cardMustBePlayedByPlayer:self fromCards:[self cardsToPlay]];
-	Card * card = [self cardToPlay];
+	Card * card = [delegate cardMustBePlayedByPlayer:self fromCards:[self cardsToPlay]];
 	[hand removeObject:card];
 	[delegate cardPlayed:card byPlayer:self];
 }
