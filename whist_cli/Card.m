@@ -62,8 +62,13 @@
 	return [self.number intValue];
 }
 
+
 - (NSString *)description {
-	return [NSString stringWithFormat:@"%@ of %@", [NSNumber numberWithInt:[self numberIntValue]], self.suit];
+	return [NSString stringWithFormat:@"%@ of %@", self.number, self.suit];
+}
+
+- (NSString *)abbreviation {
+	return [self.number stringByAppendingString:[self.suit substringToIndex:1]];
 }
 
 + (NSArray *)possibleNumbers {

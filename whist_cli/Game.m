@@ -135,7 +135,7 @@
 	// Get a list of cards played which followed suit
 	trumps = [table mutableCopy];
 	for (Card * card in table) {
-		if (![card.suit isEqualToString:topCard.suit]) {
+		if (![card.suit isEqualToString:[self bottomCard].suit]) {
 			[trumps removeObject:card];
 		}
 	}

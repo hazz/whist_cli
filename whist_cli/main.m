@@ -7,14 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AppDelegate.h"
 
 int main (int argc, const char * argv[])
 {
 
 	NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
 
-	// insert code here...
-	NSLog(@"Hello, World!");
+	AppDelegate *delegate = [[AppDelegate alloc] init];
 
 	[pool drain];
     return 0;

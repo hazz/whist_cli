@@ -22,6 +22,7 @@
 - (BOOL)isGreaterThan:(Card *)comparison;
 - (int)numberIntValue;
 - (NSString *)description;
+- (NSString *)abbreviation;
 + (Card *)highestOfCards:(NSMutableArray *)cards;
 
 @property (nonatomic, retain) NSString * number;

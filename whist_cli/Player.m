@@ -30,6 +30,7 @@
 	[delegate cardPlayed:card byPlayer:self];
 }
 - (void)playCard {
+	[delegate cardMustBePlayedByPlayer:self fromCards:[self cardsToPlay]];
 	Card * card = [self cardToPlay];
 	[hand removeObject:card];
 	[delegate cardPlayed:card byPlayer:self];

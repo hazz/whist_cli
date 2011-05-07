@@ -12,6 +12,7 @@
 		EFB13B211374B5A300EB8CB3 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB13B1C1374B5A300EB8CB3 /* Card.m */; };
 		EFB13B221374B5A300EB8CB3 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB13B1E1374B5A300EB8CB3 /* Game.m */; };
 		EFB13B231374B5A300EB8CB3 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB13B201374B5A300EB8CB3 /* Player.m */; };
+		EFB13B261374B62700EB8CB3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB13B251374B62700EB8CB3 /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,6 +39,8 @@
 		EFB13B1E1374B5A300EB8CB3 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
 		EFB13B1F1374B5A300EB8CB3 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		EFB13B201374B5A300EB8CB3 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		EFB13B241374B62700EB8CB3 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EFB13B251374B62700EB8CB3 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				EFB13B111374B54E00EB8CB3 /* main.m */,
+				EFB13B241374B62700EB8CB3 /* AppDelegate.h */,
+				EFB13B251374B62700EB8CB3 /* AppDelegate.m */,
 				EFB13B1B1374B5A300EB8CB3 /* Card.h */,
 				EFB13B1C1374B5A300EB8CB3 /* Card.m */,
 				EFB13B1D1374B5A300EB8CB3 /* Game.h */,
@@ -152,6 +157,7 @@
 				EFB13B211374B5A300EB8CB3 /* Card.m in Sources */,
 				EFB13B221374B5A300EB8CB3 /* Game.m in Sources */,
 				EFB13B231374B5A300EB8CB3 /* Player.m in Sources */,
+				EFB13B261374B62700EB8CB3 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
