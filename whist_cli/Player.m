@@ -10,7 +10,7 @@
 
 
 @implementation Player
-@synthesize name, hand, tricks, delegate;
+@synthesize name, hand, tricks, bid, score, delegate;
 
 - (id)init
 {
@@ -22,6 +22,16 @@
     }
     
     return self;
+}
+
+- (int)bidLast:(BOOL)lastbid {
+	if (lastbid) {
+		self.bid = [delegate playerMustBid:self lastBid:YES];
+	}
+	else {
+		self.bid = [delegate playerMustBid:self lastBid:NO];
+	}
+	return self.bid;
 }
 
 - (void)lead {

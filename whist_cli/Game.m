@@ -18,7 +18,6 @@
 {
     self = [super init];
     if (self) {
-        table = [[NSMutableArray alloc] init];
     }
     
     return self;
@@ -26,6 +25,8 @@
 
 - (void)dealloc
 {
+	[table release];
+	[bids release];
 	for (Player * p in players) {
 		[p release];
 	}
@@ -37,6 +38,8 @@
 - (Game *)initWith:(NSArray *)thePlayersNames {
 	self = [super init];
 	if (self) {
+		table = [[NSMutableArray alloc] init];
+		bids = [[NSMutableArray alloc] init];
 		NSMutableArray * arr = [[NSMutableArray alloc] init];
 		for (NSString * name in thePlayersNames) {
 			Player * p = [[Player alloc] init];
@@ -53,16 +56,29 @@
 - (void)play {
 	NSLog(@"%i rounds", self.rounds);
 	for (int i = rounds; i > 0; i--) {
+		currentRound = i;
 		self.deck = [self newDeck];
 		[self shuffleDeck];
 		[self deal:i startingWithPlayerAtIndex:0];
 		trumpSuit = [[Card possibleSuits] objectAtIndex:arc4random()%4];
 		NSLog(@"Trumps are %@", trumpSuit);
+		[self startBidding];
 		for (int p = 0; p < i; p++) {
 			[self playTrick];
 		}
 		[self scores];
 	}
+}
+
+- (void)startBidding {
+	[bids removeAllObjects];
+	for (int i = 0; i < [players count]-1; i++) {
+		NSNumber *num = [NSNumber numberWithInt:[[players objectAtIndex:i] bidLast:NO]];
+		[bids insertObject:num atIndex:i];
+		[num release];
+	}
+	NSUInteger d = [players count]-1;
+	[bids insertObject:[NSNumber numberWithInt:[[players objectAtIndex:d] bidLast:YES]] atIndex:d];
 }
 
 #pragma mark Deck
@@ -153,12 +169,11 @@
 }
 
 - (Card *)cardMustBePlayedByPlayer:(id)sender fromCards:(NSMutableArray *)cards {
-	NSLog(@"%@ must play a card", [sender name]);
-	NSLog(@"Possible cards to play:");
-	for (Card * card in cards) {
-		NSLog(@"%@", [card description]);
-	}
 	return [delegate player:(Player *)sender mustPlayACardFrom:cards];
+}
+
+- (int)playerMustBid:(id)sender lastBid:(BOOL)last {
+	return [delegate player:(Player *)sender mustBidLast:last];
 }
 
 #pragma mark Misc
@@ -173,8 +188,27 @@
 
 - (void)scores {
 	for (Player * p in players) {
-		NSLog(@"%@: %i", p.name, (int)[p.tricks count]);
+		int tricks = [p.tricks count];
+		int bid = p.bid;
+		if (tricks == bid) {
+			p.score += (10+tricks);
+		}
+		else if (tricks < bid) {
+			p.score += tricks;
+		}
+		else if (tricks > bid) {
+			p.score -= (tricks - bid);
+		}
+		NSLog(@"%@: %i", p.name, p.score);
 	}
+}
+
+- (int)rem {
+	int num = 0;
+	for (NSNumber *n in bids) {
+		num += [n intValue];
+	}
+	return currentRound - num;
 }
 
 @end

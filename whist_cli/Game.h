@@ -14,6 +14,7 @@
 @protocol GameDelegate
 @optional
 - (Card *)player:(Player *)player mustPlayACardFrom:(NSMutableArray *)cards;
+- (int)player:(Player *)player mustBidLast:(BOOL)lastbid;
 @end
 
 @interface Game : NSObject <PlayerDelegate> {
@@ -22,8 +23,10 @@
 	NSMutableArray * table;
 	NSArray * players;
 	NSMutableArray * deck;
+	NSMutableArray *bids;
 	NSString * trumpSuit;
 	int rounds;
+	int currentRound;
 }
 
 - (NSMutableArray *)newDeck;
@@ -33,8 +36,9 @@
 - (void)playTrick;
 - (Player *)winnerOfTrick;
 - (void)play;
+- (void)startBidding;
 - (Card *)bottomCard;
-
+- (int)rem;
 - (void)scores;
 
 @property (nonatomic, retain) id <GameDelegate> delegate;
