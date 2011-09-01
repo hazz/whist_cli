@@ -30,10 +30,16 @@
 }
 
 - (Card *)player:(Player *)player mustPlayACardFrom:(NSMutableArray *)cards {
-	NSLog(@"It is %@'s turn. The options are:", player.name);
-	for (Card * card in cards) {
-		NSLog(@"%@ %@", [card description], [card abbreviation]);
-	}
+	NSLog(@"It is %@'s turn.", player.name); 
+    NSMutableString *hand = [NSMutableString stringWithString:@""];
+    for (Card *card in player.hand) {
+        [hand appendString:[NSString stringWithFormat:@"%@ ", [card abbreviation]]];
+    }
+    NSLog(@"Hand: %@", hand);
+//    NSLog(@"The options are:");
+//	for (Card * card in cards) {
+//		NSLog(@"%@ %@", [card description], [card abbreviation]);
+//	}
 	NSLog(@"Type the card abbreviation of the card you wish to play (e.g. 4H for the 4 of Hearts).");
 	BOOL choiceMade = NO;
 	while (!choiceMade) {
