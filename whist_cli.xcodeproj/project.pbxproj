@@ -131,6 +131,9 @@
 /* Begin PBXProject section */
 		EFB13B011374B54D00EB8CB3 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = EFB13B041374B54D00EB8CB3 /* Build configuration list for PBXProject "whist_cli" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -241,6 +244,7 @@
 				EFB13B1A1374B54E00EB8CB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

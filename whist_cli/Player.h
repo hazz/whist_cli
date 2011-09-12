@@ -3,7 +3,7 @@
 //  Whist
 //
 //  Created by Harry Maclean on 14/04/2011.
-//  Copyright 2011 City of London School. All rights reserved.
+//  Copyright 2011 Harry Maclean. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
